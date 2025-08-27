@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #007BFF; /* Blue background */
+  text-align: center;
+  padding: 50px;
+  margin: 0;
+}
+
+#quiz {
+  background: #fff;
+  padding: 30px 40px;     
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Question text */
+#question {
+  font-size: 24px;      /* Bigger question text */
+  font-weight: bold;    /* Bold for emphasis */
+  margin-bottom: 40px;  /* Space before answer choices */
+  color: #333;          /* Dark gray for readability */
+  text-align: center;   /* Centered inside quiz box */
+}
+
+/* Choice buttons */
+#options button {
+  display: block;
+  margin: 25px auto;    /* space between choice buttons */
+  width: 80%;
+  max-width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #007BFF; /* Blue buttons */
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#options button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+#options button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Prev & Next button container */
+#buttons {
+  margin-top: 50px;       /* space above Prev & Next */
+  display: flex;
+  justify-content: center;
+  gap: 60px;              /* spacing between Prev & Next */
+}
+
+/* Prev & Next buttons */
+#buttons button {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: pink; /* Pink buttons */
+  color: black;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#buttons button:hover:not(:disabled) {
+  background-color: #ff8cbf;
+  transform: translateY(-2px);
+}
+
+#buttons button:disabled {
+  background-color: #f5c6d6;
+  cursor: not-allowed;
+}
